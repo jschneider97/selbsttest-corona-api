@@ -12,8 +12,8 @@ plugins {
     id 'maven-publish'
 }
 
-group = 'de.hsos.kbse.lagerverwaltung'
-version = '0.9-SNAPSHOT'
+group = 'com.wirvsvirus.selftest'
+version = '0.1-SNAPSHOT'
 
 publishing {
     publications {
