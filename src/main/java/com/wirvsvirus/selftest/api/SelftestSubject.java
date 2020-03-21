@@ -64,4 +64,12 @@ public class SelftestSubject extends BaseDto {
     public void setDeviceID(String deviceID) {
         this.deviceID = deviceID;
     }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
 }
