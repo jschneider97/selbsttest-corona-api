@@ -23,8 +23,6 @@ public class Question extends BaseDto {
     private List<ChoiceAnswer> answers;
     private Answer answer;
 
-    private Map<Question, Answer> conditions;
-
     public String getQuestionText() {
         return questionText;
     }
@@ -63,13 +61,5 @@ public class Question extends BaseDto {
 
     public void setAnswer(Answer answer) {
         this.answer = answer;
-    }
-
-    public Map<Question, Answer> getConditions() {
-        return conditions;
-    }
-
-    public void setConditions(Map<Question, Answer> conditions) {
-        this.conditions = conditions;
     }
 }

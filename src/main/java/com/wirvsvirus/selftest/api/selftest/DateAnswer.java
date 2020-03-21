@@ -9,9 +9,15 @@ import java.util.Date;
  */
 
 public class DateAnswer extends Answer {
-    Date answerDate;
+    public Date answerDate;
 
-    @Override
+    public Date getAnswerDate() {
+        return answerDate;
+    }
+
+    public void setAnswerDate(Date answerDate) {
+        this.answerDate = answerDate;
+    }
     public QuestionType getAnswerType() {
         return QuestionType.DATE_QUESTION;
     }

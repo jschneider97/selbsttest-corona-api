@@ -17,7 +17,6 @@ public class ChoiceAnswer extends Answer{
         this.answertText = answertText;
     }
 
-    @Override
     public QuestionType getAnswerType() {
         return QuestionType.CHOICE_QUESTION;
     }

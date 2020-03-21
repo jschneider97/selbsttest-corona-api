@@ -9,11 +9,21 @@ import java.util.Date;
 public class ContactCriteria {
 
     private int score;
+    Date contactDate;
 
-    Date contactGermany;
-    Date contactInternational;
+    public int getScore() {
+        return score;
+    }
 
-    String area;
+    public void setScore(int score) {
+        this.score = score;
+    }
 
+    public Date getContactDate() {
+        return contactDate;
+    }
 
+    public void setContactDate(Date contactDate) {
+        this.contactDate = contactDate;
+    }
 }

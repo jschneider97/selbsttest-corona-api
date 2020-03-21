@@ -1,10 +1,9 @@
 package com.wirvsvirus.selftest.api.selftest;
 
 import com.wirvsvirus.selftest.api.BaseDto;
-import com.wirvsvirus.selftest.api.Criteria.ContactCriteria;
-import com.wirvsvirus.selftest.api.Criteria.SymptomsCriteria;
-import com.wirvsvirus.selftest.api.Criteria.TravelingCriteria;
+import com.wirvsvirus.selftest.api.Criteria.*;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -14,11 +13,14 @@ import java.util.Map;
 public class Selftest extends BaseDto {
 
     private Boolean finished;
-    Map<Question, Answer> answers;
+    List<Question> questions;
+
     ContactCriteria contactCriteria;
     SymptomsCriteria symptomsCriteria;
     TravelingCriteria travelingCriteria;
-    //...
+    RiskGroupCriteria riskGroupCriteria;
+    SymptomsHighCriteria symptomsHighCriteria;
+    SymptomsMediumCriteria symptomsMediumCriteria;
 
 
     public Boolean getFinished() {
@@ -29,12 +31,12 @@ public class Selftest extends BaseDto {
         this.finished = finished;
     }
 
-    public Map<Question, Answer> getAnswers() {
-        return answers;
+    public List<Question> getQuestions() {
+        return questions;
     }
 
-    public void setAnswers(Map<Question, Answer> answers) {
-        this.answers = answers;
+    public void setQuestions(List<Question> questions) {
+        this.questions = questions;
     }
 
     public ContactCriteria getContactCriteria() {
@@ -59,5 +61,29 @@ public class Selftest extends BaseDto {
 
     public void setTravelingCriteria(TravelingCriteria travelingCriteria) {
         this.travelingCriteria = travelingCriteria;
+    }
+
+    public RiskGroupCriteria getRiskGroupCriteria() {
+        return riskGroupCriteria;
+    }
+
+    public void setRiskGroupCriteria(RiskGroupCriteria riskGroupCriteria) {
+        this.riskGroupCriteria = riskGroupCriteria;
+    }
+
+    public SymptomsHighCriteria getSymptomsHighCriteria() {
+        return symptomsHighCriteria;
+    }
+
+    public void setSymptomsHighCriteria(SymptomsHighCriteria symptomsHighCriteria) {
+        this.symptomsHighCriteria = symptomsHighCriteria;
+    }
+
+    public SymptomsMediumCriteria getSymptomsMediumCriteria() {
+        return symptomsMediumCriteria;
+    }
+
+    public void setSymptomsMediumCriteria(SymptomsMediumCriteria symptomsMediumCriteria) {
+        this.symptomsMediumCriteria = symptomsMediumCriteria;
     }
 }

@@ -24,4 +24,5 @@ public class Contact extends BaseDto{
     public void setEMail(String EMail) {
         this.EMail = EMail;
     }
+
 }
