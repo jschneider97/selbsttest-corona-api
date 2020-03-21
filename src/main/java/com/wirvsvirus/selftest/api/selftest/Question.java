@@ -4,6 +4,7 @@ import com.wirvsvirus.selftest.api.BaseDto;
 import com.wirvsvirus.selftest.api.enums.Criteria;
 import com.wirvsvirus.selftest.api.enums.QuestionType;
 
+import java.awt.*;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +20,7 @@ public class Question extends BaseDto {
     //SingleChoice oder Date
     private QuestionType questionType;
 
-    private List<Answer> answers;
+    private List<ChoiceAnswer> answers;
     private Answer answer;
 
     private Map<Question, Answer> conditions;
@@ -48,11 +49,11 @@ public class Question extends BaseDto {
         this.questionType = questionType;
     }
 
-    public List<Answer> getAnswers() {
+    public List<ChoiceAnswer> getAnswers() {
         return answers;
     }
 
-    public void setAnswers(List<Answer> answers) {
+    public void setAnswers(List<ChoiceAnswer> answers) {
         this.answers = answers;
     }
 
