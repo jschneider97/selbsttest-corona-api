@@ -4,7 +4,7 @@ package com.wirvsvirus.selftest.api;
  * @author Justus Schneider
  */
 
-public class Contact {
+public class Contact extends BaseDto{
 
     private String telephoneNo;
     private String EMail;
